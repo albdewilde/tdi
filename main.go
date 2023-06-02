@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/albdewilde/tdi/usual/domain"
 	"github.com/albdewilde/tdi/usual/infrastructure"
 )
@@ -15,9 +13,7 @@ func main() {
 	app := domain.NewApp(userFetch, locFetch)
 
 	// Do stuff with our app
-	_ = app
+	app.DoStuff()
 
 	// Initialize the app with samber/do
-
-	fmt.Println("(:")
 }

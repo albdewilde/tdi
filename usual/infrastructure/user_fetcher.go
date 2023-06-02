@@ -16,5 +16,5 @@ func NewUserFetch(host, key string) *UserFetch {
 }
 
 func (uf *UserFetch) Fetch(ID string) domain.User {
-	return domain.User{}
+	return domain.User{ID: ID}
 }

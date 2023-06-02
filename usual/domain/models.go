@@ -1,4 +1,9 @@
 package domain
 
-type User struct{}
-type Location struct{}
+type User struct {
+	ID string
+}
+
+type Location struct {
+	ID string
+}

@@ -9,12 +9,12 @@ type LocationFetch struct {
 }
 
 func NewLocationFetch(host, key string) *LocationFetch {
-	var userFetch LocationFetch
-	userFetch.host = host
-	userFetch.key = key
-	return &userFetch
+	var locationFetcher LocationFetch
+	locationFetcher.host = host
+	locationFetcher.key = key
+	return &locationFetcher
 }
 
 func (uf *LocationFetch) Fetch(ID string) domain.Location {
-	return domain.Location{}
+	return domain.Location{ID: ID}
 }
