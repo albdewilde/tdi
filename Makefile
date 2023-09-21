@@ -1,7 +1,10 @@
-.PHONY: run build
+.PHONY: run r build b test t
 
-run: build
+run r: build
 	./tdi
 
-build:
+build b:
 	go build .
+
+test t:
+	go test ./... -v

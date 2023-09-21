@@ -1,18 +1,5 @@
 package userfetcher
 
-import (
-	"github.com/samber/do"
-)
-
-func init() {
-	do.Provide(
-		nil,
-		func(i *do.Injector) (*UserFetch, error) {
-			return NewUserFetch("example.com", "key"), nil
-		},
-	)
-}
-
 // UserFetch implement the samber.UserFetcher interface to be used by the samber.App structure
 type UserFetch struct {
 	host string

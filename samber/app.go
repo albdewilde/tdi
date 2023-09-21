@@ -3,10 +3,10 @@ package samber
 import (
 	"fmt"
 
-	"github.com/samber/do"
-
 	"github.com/albdewilde/tdi/samber/locationfetcher"
 	"github.com/albdewilde/tdi/samber/userfetcher"
+	_ "github.com/albdewilde/tdi/samber/userfetcher/global"
+	"github.com/samber/do"
 )
 
 func init() {
